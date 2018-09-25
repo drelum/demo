@@ -56,7 +56,7 @@ public class SistemaController {
 	
 	@GetMapping("/ip")
     @ResponseBody
-    public ResponseEntity<String> sayHello() throws SocketException {
+    public ResponseEntity<String> ip() throws SocketException {
 		
 		Enumeration<NetworkInterface> e = NetworkInterface.getNetworkInterfaces();
 		String host = "";

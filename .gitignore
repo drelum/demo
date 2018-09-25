@@ -1,2 +1,4 @@
 /.project
 /src/main/resources/terraform/.terraform
+/target/
+/.classpath
