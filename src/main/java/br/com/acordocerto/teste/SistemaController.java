@@ -26,6 +26,8 @@ public class SistemaController {
 	private final AtomicLong counter = new AtomicLong();
 	private final AtomicBoolean ligado = new AtomicBoolean(true);
 	
+	private String versao = "1";
+	
 	@Autowired
 	private Credor credor;
 	
@@ -72,7 +74,7 @@ public class SistemaController {
 		    	if (inetAddress instanceof Inet6Address ||  inetAddress.isLoopbackAddress())
 		    		continue;
 		    	
-		    	host = credor.getCredor() + ": " + inetAddress.getHostAddress();
+		    	host = credor.getCredor() + " v " + versao + ": " + inetAddress.getHostAddress();
 		    	System.out.println(host);
 		    	
 		    
