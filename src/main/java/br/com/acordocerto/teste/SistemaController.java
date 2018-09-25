@@ -26,7 +26,7 @@ public class SistemaController {
 	private final AtomicLong counter = new AtomicLong();
 	private final AtomicBoolean ligado = new AtomicBoolean(true);
 	
-	private String versao = "2";
+	private String versao = "3";
 	
 	@Autowired
 	private Credor credor;
