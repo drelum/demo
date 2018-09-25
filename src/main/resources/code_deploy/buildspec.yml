@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn install -DskipTests=true
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - mvn package
+artifacts:
+  files:
+    - target/teste-0.0.1-SNAPSHOT.jar

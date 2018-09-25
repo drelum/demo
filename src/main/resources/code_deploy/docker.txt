@@ -1,0 +1,4 @@
+#Amazon linux
+wget https://gist.githubusercontent.com/brianz/8458fc666f5156fdbbc2/raw/dd2e6de701897851e60b6e8b8ded4728e780969b/install-docker.sh
+chmod +x install-docker.sh
+./install-docker.sh
